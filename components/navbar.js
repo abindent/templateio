@@ -47,7 +47,7 @@ const NavBar = ({router}) => {
                      <Link href="/about"    ><a  className={`px-3 py-2 rounded-md text-sm font-medium ${router.pathname === "/about" ?'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`} >About</a></Link>
                      <Link href="/templates"><a  className={`px-3 py-2 rounded-md text-sm font-medium ${router.pathname === "/templates" ?'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`} >Templates</a></Link>
                      <Link href="/contact"  ><a  className={`px-3 py-2 rounded-md text-sm font-medium ${router.pathname === "/contact" ?'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`} >Contact</a></Link>
-                     {!session && <><a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full" onClick={()=>{signIn('github')}} style={{cursor: "pointer"}}> Login/SignUp</a></>}
+                     {!session && <Link  href="/login" ><a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full"style={{cursor: "pointer"}}> Login/SignUp</a></Link>}
                 </div>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const NavBar = ({router}) => {
                      <Link href="/about"    ><a className={`block px-3 py-2 rounded-md text-base font-medium ${router.pathname === "/about" ?'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`} >About</a></Link>
                      <Link href="/templates"><a className={`block px-3 py-2 rounded-md text-base font-medium ${router.pathname === "/templates" ?'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`} >Temaplates</a></Link>
                      <Link href="/contact"  ><a className={`block px-3 py-2 rounded-md text-base font-medium ${router.pathname === "/contact" ?'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`} >Contact</a></Link>
-                     {!session && <Link onClick={()=>{signIn('github')}}><a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full"> Login/SignUp</a></Link>}
+                     {!session && <><a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full" onClick={()=>{signIn("github")}}> Login/SignUp</a></>}
             </div>
           </Disclosure.Panel>
         </>

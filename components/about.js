@@ -8,7 +8,7 @@ import {
 
 const features = [{
             name: 'Fatser Website Builds',
-            description: 'Build your website building faster with our readymade templates.',
+            description: 'Build your website faster with our readymade templates.',
             icon: GlobeAltIcon,
         },
         {

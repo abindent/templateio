@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Template.io</title>
-        <link rel="icon" href="https://osourcegames.firebaseapp.com/canva-big-metal-letter-v-MAAm7Bhyp1o.png" />
+        <link rel="icon" href="/canva.png" />
       </Head>
      </div>
        <NavBar />

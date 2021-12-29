@@ -4,15 +4,13 @@ import {useSession} from "next-auth/react"
 
 export default function Profile(){
     const {data: session } = useSession()
-  
-    
-   
+
     return(
     <>
     <div>
       <Head>
         <title>Profile | Template.io</title>
-        <link rel="icon" href="https://osourcegames.firebaseapp.com/canva-big-metal-letter-v-MAAm7Bhyp1o.png" />
+        <link rel="icon" href="/canva.png" />
       </Head>
      </div>
      {!session && <><NavBar/>
